@@ -1,0 +1,6 @@
+layouts/
+node_modules/
+dist/
+.log
+yarn.lock
+package-lock.json

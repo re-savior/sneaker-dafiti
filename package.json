@@ -1,0 +1,14 @@
+{
+  "name": "sneaker-dafiti",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:re-savior/sneaker-dafiti.git",
+  "author": "Renato Salvador <renato_salva@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node-sass -w scss/style.scss -o css/"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
