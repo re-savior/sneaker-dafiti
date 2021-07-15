@@ -1,0 +1,172 @@
+* {
+  border: 0;
+  box-sizing: border-box;
+  letter-spacing: 0px;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+::selection {
+  color: #ffffff;
+  background: #000000; }
+
+body {
+  background-color: #ffffff;
+  margin: auto;
+  max-width: 1920px;
+  width: 100%; }
+  body header {
+    display: flex; }
+    body header img {
+      max-width: 1920px;
+      width: 100%; }
+  body aside {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto; }
+    body aside .logo {
+      margin: 10px 7px;
+      height: 121px;
+      width: 121px; }
+  body .articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1180px; }
+    body .articles article figure {
+      display: block;
+      position: relative;
+      overflow: hidden; }
+      body .articles article figure img {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out; }
+      body .articles article figure figcaption {
+        bottom: -50%;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 18px 41px 13px 17px;
+        position: absolute;
+        opacity: 0;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        -moz-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+        body .articles article figure figcaption h3 {
+          color: #ffffff;
+          font-family: Arial, sans-serif;
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 21px;
+          margin-bottom: 3px;
+          text-transform: uppercase; }
+        body .articles article figure figcaption p {
+          color: #ffffff;
+          font-family: Arial, sans-serif;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 17px; }
+        body .articles article figure figcaption a {
+          display: inline-block;
+          font-family: Arial, sans-serif;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 700;
+          position: relative;
+          color: #ffffff;
+          text-decoration: none;
+          overflow: hidden;
+          top: 3px; }
+          body .articles article figure figcaption a:after {
+            content: '';
+            position: absolute;
+            background: #ffffff;
+            height: 2px;
+            width: 0%;
+            transform: translateX(-50%);
+            left: 50%;
+            bottom: 0;
+            transition: 0.35s ease; }
+          body .articles article figure figcaption a:hover:after, body .articles article figure figcaption a:focus:after, body .articles article figure figcaption a:active:after {
+            width: 100%; }
+    body .articles article figure:hover img,
+    body .articles article figure:focus img,
+    body .articles article figure:active img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+    body .articles article figure:hover figcaption,
+    body .articles article figure:focus figcaption,
+    body .articles article figure:active figcaption {
+      bottom: 0;
+      opacity: 1; }
+    body .articles .two-art {
+      display: flex;
+      flex-direction: column;
+      height: 660px;
+      justify-content: space-between;
+      margin: 20px 0; }
+      body .articles .two-art article figure {
+        max-width: 576px;
+        height: 320px; }
+      body .articles .two-art article img {
+        max-width: 576px;
+        width: 100%; }
+    body .articles .one-art {
+      margin: 20px 0; }
+      body .articles .one-art article figure {
+        max-width: 575px; }
+      body .articles .one-art article img {
+        max-width: 575px;
+        width: 100%; }
+
+@media screen and (max-width: 1250px) {
+  body aside {
+    margin: auto;
+    max-width: 700px; }
+  body .articles {
+    justify-content: space-evenly;
+    max-width: 1000px; }
+    body .articles article figure figcaption {
+      bottom: -69px;
+      padding: 14px 33px 10px 13px; }
+      body .articles article figure figcaption h3 {
+        font-size: 15px;
+        line-height: 17px; }
+      body .articles article figure figcaption p {
+        font-size: 13px;
+        line-height: 13px; }
+      body .articles article figure figcaption a {
+        font-size: 13px;
+        top: 2.46px; }
+    body .articles .two-art {
+      height: auto;
+      margin: 12px 10px; }
+      body .articles .two-art article figure {
+        height: auto;
+        max-width: 472px;
+        max-height: 262px; }
+        body .articles .two-art article figure img {
+          max-width: 472px; }
+    body .articles .one-art {
+      margin: 12px 10px; }
+      body .articles .one-art article figure,
+      body .articles .one-art article figure img {
+        height: auto;
+        max-height: 541px;
+        max-width: 471px; } }
+
+@media screen and (max-width: 982px) {
+  body .articles .two-art article:first-child figure {
+    margin-bottom: 24px; } }
+
+@media screen and (max-width: 425px) {
+  body aside .logo {
+    margin: 5px 3px;
+    height: 100px;
+    width: 100px; } }
